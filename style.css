@@ -357,16 +357,21 @@ section + section {
 
 .profile-card {
   display: grid;
-  grid-template-columns: 92px 1fr;
-  gap: 16px;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 24px;
   align-items: center;
-  padding: 16px;
+  padding: 18px;
 }
 
 .profile-thumb {
-  width: 92px;
+  width: 96px;
   aspect-ratio: 1;
   border-radius: var(--radius);
+}
+
+.profile-card h3,
+.profile-card p {
+  overflow-wrap: anywhere;
 }
 
 .profile-card p {
